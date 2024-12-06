@@ -17,7 +17,7 @@ public class GSave implements BankAccountDecorator {
 
     @Override
     public double getInterestRate() {
-        return 2.5;
+        return 0.025; // 2.5% interest rate
     }
 
     @Override
@@ -32,7 +32,7 @@ public class GSave implements BankAccountDecorator {
 
     @Override
     public double computeBalanceWithInterest() {
-        return getBalance() + (getBalance() * (getInterestRate() / 100));
+        return getBalance() + (getBalance() * getInterestRate());
     }
 
     @Override

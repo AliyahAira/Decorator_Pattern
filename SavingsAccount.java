@@ -22,7 +22,7 @@ public class SavingsAccount implements BankAccount {
 
     @Override
     public double getInterestRate() {
-        return 1.0;
+        return 0.01; // 1% interest rate
     }
 
     @Override
@@ -37,11 +37,11 @@ public class SavingsAccount implements BankAccount {
 
     @Override
     public double computeBalanceWithInterest() {
-        return balance + (balance * (getInterestRate() / 100));
+        return balance + (balance * getInterestRate());
     }
 
     @Override
     public String showInfo() {
-        return "Account Number: " + accountNumber + "\nAccount Name: " + accountName + "\nBalance: " + balance;
+        return "Account number: " + accountNumber + "\nAccount name: " + accountName + "\nBalance: " + balance;
     }
 }
