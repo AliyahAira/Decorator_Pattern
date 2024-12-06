@@ -31,8 +31,8 @@ public class SavingsAccount implements BankAccount {
     }
 
     @Override
-    public double showBenefits() {
-        return 0.0; // Standard benefit level
+    public String showBenefits() {
+        return "Standard Savings Account";
     }
 
     @Override
@@ -42,6 +42,6 @@ public class SavingsAccount implements BankAccount {
 
     @Override
     public String showInfo() {
-        return "Account Number: " + accountNumber + ", Account Name: " + accountName + ", Balance: " + balance;
+        return "Account Number: " + accountNumber + "\nAccount Name: " + accountName + "\nBalance: " + balance;
     }
 }

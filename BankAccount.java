@@ -2,7 +2,7 @@ public interface BankAccount {
     String showAccountType();
     double getInterestRate();
     double getBalance();
-    double showBenefits();
+    String showBenefits(); //In the diagram its double?
     double computeBalanceWithInterest();
     String showInfo();
 }

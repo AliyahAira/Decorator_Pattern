@@ -26,8 +26,8 @@ public class UpSave implements BankAccountDecorator {
     }
 
     @Override
-    public double showBenefits() {
-        return 2.0; // UpSave benefits level
+    public String showBenefits() {
+        return bankAccount.showBenefits() + " , With Insurance";
     }
 
     @Override
